@@ -2,7 +2,7 @@
 
 一个简洁、大气、时尚的 [Hexo]主题.
 
-![XFun](./xfun-demo.png)
+![XFun](/jianjunx/hexo-theme-xfun/blob/master/xfun-demo.png)
 
 ## Installation
 
