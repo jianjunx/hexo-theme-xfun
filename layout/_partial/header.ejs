@@ -1,0 +1,27 @@
+<header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        <% if (theme.logo){ %>
+        <a class="main-nav-link logo-link" href="/">
+          <img class="main-nav-logo" src="<%- theme.logo %>" alt="logo" /> </a
+        ><% } %> <% for (var i in theme.menu){ %>
+        <a
+          class="main-nav-link nav_link_flag"
+          href="<%- url_for(theme.menu[i].link) %>"
+        >
+          <i class="<%- theme.menu[i].icon %>"></i>
+          <span><%= i %></span>
+        </a>
+        <% } %>
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <input type="text" class="search-input" />
+          <div class="search-drop"></div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>

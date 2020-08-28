@@ -1,0 +1,61 @@
+# Header
+menu:
+  首页:
+    icon: icon-home # 字体图标类名，FontAwesome图标，在css/_partial/icons.styl定义
+    link: / # 链接地址
+rss: /atom.xml # 配合hexo-generator-feed插件
+logo: # logo地址
+# Content
+excerpt_link: 阅读全文>>
+fancybox: true
+
+# Sidebar
+sidebar: right
+widgets:
+  - personal
+  # - category
+  # - tag
+  # - tagcloud
+  # - archive
+  # - recent_posts
+
+personal: #个人信息栏设置
+  avatar: /images/upload/avatar.png #头像地址
+  name: JJ Xie # 作者名
+  description: XFun. #描述
+
+lines: #个人信息栏下方的链接
+  标签: #名称
+    icon: icon-tags #图标类名
+    link: /tags
+  分类:
+    icon: icon-category
+    link: /categorys
+  XFun:
+    icon: icon-github
+    link: https://github.com/jianjunx/hexo-theme-xfun
+
+icons: #个人信息栏下方的图标按钮
+  GitHub:
+    icon: icon-github
+    link: https://github.com/jianjunx
+  微博:
+    icon: icon-weibo
+    link:
+  知乎:
+    icon: icon-zhihu
+    link: /
+  掘金:
+    icon: icon-juejin
+    link: /
+
+valine:
+  appId: #valine leanClode appId
+  appKey: #valine leanClode appKey
+
+# widget behavior
+archive_type: 'monthly'
+show_count: true
+ribbon_flow: true
+# Miscellaneous
+favicon: #favicon.ico地址

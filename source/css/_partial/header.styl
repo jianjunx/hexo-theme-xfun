@@ -1,0 +1,127 @@
+#header
+  position: fixed
+  width 100%
+  top 10px
+  
+
+#header-outer
+  height: 100%
+  position: relative
+  padding 0
+
+#header-inner
+  position: relative
+  @extend $shadow-radius
+
+#main-nav
+  float: left
+
+$nav-link
+  float: left
+  color: color-default
+  text-decoration: none
+  transition: opacity 0.2s
+  display: block
+  padding: 18px 15px
+  &.nav-active
+    // border-bottom 1px solid color-link
+    color: color-link
+  &:hover
+    color: color-link
+    background-color rgba(240, 240, 240, .8)
+    
+
+
+.nav-icon
+  @extend $nav-link
+  font-family: font-icon
+  text-align: center
+  font-size: font-size
+  width: font-size
+  height: font-size
+  padding: 18px 15px
+  position: relative
+  cursor: pointer
+
+.main-nav-link
+  @extend $nav-link
+  font-weight: 300
+  letter-spacing: 1px
+  @media mq-mobile
+    display: none
+
+.logo-link
+  padding 12px 15px 10px
+.main-nav-logo
+  height 32px
+
+#main-nav-toggle
+  display: none
+
+#sub-nav
+  float: right
+  // margin-right: -15px
+
+
+// #nav-search-btn
+//   &:before
+//     content: "\f002"
+
+#search-form-wrap
+  position relative
+  height 56px
+  display flex
+  padding-right 20px
+  align-items: center
+  &:before
+    content: "\f002"
+    font-family: FontAwesome;
+    text-align: center;
+    font-size: 14px;
+    position absolute
+    width 20px
+    height 20px
+    top: 22px;
+    right: 26px;
+    color: #999
+
+.search-input
+  height 30px
+  width: 240px
+  border 1px solid #f0f0f0
+  background: none
+  color: color-default
+  font: 13px font-sans
+  border-radius: 4px
+  box-sizing: border-box
+  padding: 10px
+  padding-right 28px
+  outline: none
+  &::-webkit-search-results-decoration
+  &::-webkit-search-cancel-button
+    -webkit-appearance: none
+
+.search-drop
+  position absolute
+  display none
+  top 62px
+  right 0
+  width: 280px
+  padding 15px 0
+  @extend $shadow-radius
+
+  a
+    display: block
+    text-decoration: none;
+    padding 4px 10px
+    &:hover
+      background-color: color-background
+  h3
+    color: color-default
+    font-size: 16px
+  p
+    color: color-sidebar-text
+    font-size: 12px
+.search-color
+  color: color-link
+
