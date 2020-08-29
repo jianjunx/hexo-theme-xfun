@@ -56,6 +56,6 @@ valine:
 # widget behavior
 archive_type: 'monthly'
 show_count: true
-ribbon_flow: true
+ribbon_flow: true #背景彩带
 # Miscellaneous
 favicon: #favicon.ico地址
