@@ -45,3 +45,4 @@ git pull
 ```
 
 ## Configuration
+配置项请参考[Configuration Document](https://jianjun.fun/p/if3wr3.html)
